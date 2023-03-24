@@ -1,12 +1,11 @@
-import {FC } from "react"
 import { toggleButtonTypes } from '../type';
 
 
-const ToggleButton: FC<toggleButtonTypes> = ({
+const ToggleButton = ({
   buttonText,
   state,
   setState
-}) => {
+}: toggleButtonTypes): JSX.Element => {
 
   return (
     <button

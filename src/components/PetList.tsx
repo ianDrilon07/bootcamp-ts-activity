@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import PetItem from './PetItem'
 import { PetsObject } from '../type'
 
@@ -6,7 +5,7 @@ type PetsList = {
   pets: PetsObject[]
 }
 
-const PetList: FC<PetsList> = ({ pets })  => {
+const PetList = ({ pets }: PetsList): JSX.Element  => {
   return (
     <>
       {pets.map(({ name, age, owner }) => ( 

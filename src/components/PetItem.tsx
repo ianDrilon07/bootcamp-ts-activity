@@ -1,7 +1,6 @@
-import { FC } from "react"
 import { PetsObject } from "../type"
 
-const PetItem: FC<PetsObject> = ({name, age, owner}) => {
+const PetItem = ({name, age, owner}: PetsObject): JSX.Element => {
   return (
     <tr>
       <td>{name}</td>
