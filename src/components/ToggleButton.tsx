@@ -8,11 +8,9 @@ const ToggleButton: FC<toggleButtonTypes> = ({
   setState
 }) => {
 
-  console.log(state)
-
   return (
     <button
-      onClick={() => setState(state)}
+      onClick={() => setState((prevState) => !prevState)}
     >
       {buttonText}
     </button>
