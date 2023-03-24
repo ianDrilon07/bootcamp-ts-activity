@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState  } from 'react';
 import PetList from './components/PetList'
 import ToggleButton from './components/ToggleButton'
+import { PetsObject } from './type';
 import './App.css';
+
 
 const App = () => {
   const [show, setShow] = useState(false)
-  const pets = [
+  const pets: Array<PetsObject> = [
     { 
       name: "Doge",
       age: 1,

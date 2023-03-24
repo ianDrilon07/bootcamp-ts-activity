@@ -1,4 +1,7 @@
-const PetItem = ({name, age, owner}) => {
+import { FC } from "react"
+import { PetsObject } from "../type"
+
+const PetItem: FC<PetsObject> = ({name, age, owner}) => {
   return (
     <tr>
       <td>{name}</td>
